@@ -1,0 +1,73 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
+import { PROFILE } from '@/lib/data';
+import { scrollToId } from './SmoothScroll';
+
+export const CHAPTERS = [
+  { id: 'about', label: 'About' },
+  { id: 'skills', label: 'Skills' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'honors', label: 'Certs' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'education', label: 'Education' },
+  { id: 'contact', label: 'Contact' },
+];
+
+export default function TopNav({ show }: { show: boolean }) {
+  const [active, setActive] = useState(-1);
+  const bar = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    let raf = 0;
+    const t = () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      if (bar.current) bar.current.style.transform = `scaleX(${max > 0 ? window.scrollY / max : 0})`;
+      const mid = window.innerHeight * 0.45;
+      let a = -1;
+      CHAPTERS.forEach((c, i) => {
+        const el = document.getElementById(c.id);
+        if (el && el.getBoundingClientRect().top <= mid) a = i;
+      });
+      setActive((x) => (x === a ? x : a));
+      raf = requestAnimationFrame(t);
+    };
+    raf = requestAnimationFrame(t);
+    return () => cancelAnimationFrame(raf);
+  }, []);
+
+  return (
+    <motion.header
+      className="nav"
+      initial={{ y: -40, opacity: 0 }}
+      animate={{ y: show ? 0 : -40, opacity: show ? 1 : 0 }}
+      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+    >
+      <div className="nav-progress" ref={bar} />
+      <button className="nav-mark" onClick={() => scrollToId('billboard')} aria-label="Back to top">
+        <span className="nm-sq">MA</span>
+        <span className="nm-txt">
+          {PROFILE.name.toUpperCase()}
+          <small>{PROFILE.headline}</small>
+        </span>
+      </button>
+      <nav className="nav-chapters" aria-label="Main navigation">
+        {CHAPTERS.map((c, i) => (
+          <button
+            key={c.id}
+            className={i === active ? 'on' : ''}
+            onClick={() => scrollToId(c.id)}
+            aria-label={`Jump to ${c.label}`}
+          >
+            <i>{String(i + 1).padStart(2, '0')}</i>
+            <span>{c.label}</span>
+          </button>
+        ))}
+      </nav>
+      <button className="nav-cta" onClick={() => scrollToId('contact')}>
+        <span>Let’s Connect</span>
+      </button>
+    </motion.header>
+  );
+}
