@@ -1,172 +1,166 @@
 <div align="center">
 
-# ✦ MARYAM · 3D PORTFOLIO
+# 🌸 SAKURA ANIMATION PORTFOLIO
 
-### Software Developer · Python & Django · Web Applications
+### Maryam Abdul Karim
+**Software Developer · Python & Django · Web Applications**
 
-A cinematic portfolio with movement, depth, and personality.
+*A developer portfolio told through cinematic motion and anime-inspired visuals.*
 
-**240-frame canvas hero · Pointer-driven rotation · Crimson & obsidian UI**
+![Next.js](https://img.shields.io/badge/Next.js-14-000000?style=for-the-badge&logo=nextdotjs)
+![React](https://img.shields.io/badge/React-18-141414?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-141414?style=for-the-badge&logo=typescript)
+![CSS](https://img.shields.io/badge/Custom_CSS-8B0032?style=for-the-badge&logo=css&logoColor=white)
+![WebGL](https://img.shields.io/badge/WebGL_2-E0115F?style=for-the-badge&logo=webgl&logoColor=white)
 
-[![Next.js](https://img.shields.io/badge/Next.js-14-080607?style=for-the-badge&logo=nextdotjs)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-18-080607?style=for-the-badge&logo=react)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-080607?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-080607?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
-
-[Explore the code](https://github.com/maryamabdulkarim361-lab/3D-portfolio) · [Features](#-experience-highlights) · [Run locally](#-run-locally) · [Connect](#-connect)
+[Explore the Code](https://github.com/maryamabdulkarim361-lab/Sakura-Animation-Portfolio) · [Features](#-experience-highlights) · [Getting Started](#-run-locally) · [Connect](#-connect)
 
 </div>
 
 ---
 
-## 🎬 Hero frame preview
-
-![Frame from the portfolio's 240-frame hero sequence](https://raw.githubusercontent.com/maryamabdulkarim361-lab/3D-portfolio/main/public/frames/frame-001.png)
+## 🎞️ Visual identity
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/maryamabdulkarim361-lab/3D-portfolio/main/public/frames/frame-080.png" width="48%" alt="Hero sequence — frame 80" />
-  <img src="https://raw.githubusercontent.com/maryamabdulkarim361-lab/3D-portfolio/main/public/frames/frame-160.png" width="48%" alt="Hero sequence — frame 160" />
-  <p><em>Actual frame assets from the repository. These previews show the hero imagery, not screenshots of the full interface.</em></p>
+  <img src="https://raw.githubusercontent.com/maryamabdulkarim361-lab/Sakura-Animation-Portfolio/main/public/stills/masked.jpg" width="31%" alt="Sakura character artwork — masked pose" />
+  <img src="https://raw.githubusercontent.com/maryamabdulkarim361-lab/Sakura-Animation-Portfolio/main/public/stills/face.jpg" width="31%" alt="Sakura character artwork — face detail" />
+  <img src="https://raw.githubusercontent.com/maryamabdulkarim361-lab/Sakura-Animation-Portfolio/main/public/stills/kunai.jpg" width="31%" alt="Sakura character artwork — kunai pose" />
+  <p><em>Character stills included in the project; these are visual assets, not full-page screenshots.</em></p>
 </div>
 
-## ✨ Overview
+**Obsidian backgrounds. Burgundy depth. Sakura-pink highlights.**
 
-My personal portfolio brings together a cinematic hero, layered motion, and a structured presentation of my background, skills, and projects. An obsidian background with crimson, burgundy, and amber accents gives the interface a consistent visual identity.
+Sakura Animation Portfolio presents my projects, skills, education, and professional journey through a sequence of animated sections. It combines a scroll-controlled character performance with a structured, resume-aligned portfolio.
 
-The centerpiece is a **240-frame image sequence rendered with the HTML5 Canvas 2D API**. Mouse and touch positions determine the viewing angle, creating an interactive 3D-style experience from pre-rendered images.
+## ✨ Experience highlights
 
-## 🧩 Experience highlights
-
-| Feature | Implementation |
+| Experience | How it works |
 | :--- | :--- |
-| 🎞️ Interactive hero | 240 PNG frames mapped to pointer direction around the screen center |
-| 🖱️ Mouse & touch input | Angular tracking with smooth interpolation across the rotation boundary |
-| 🖼️ Progressive loading | Initial frame loads first; remaining frames load in batches of 12 |
-| 📐 Adaptive canvas | Cover-style image sizing and device-pixel-ratio handling, capped at 2 |
-| 🪄 Layered motion | Scroll reveals, parallax layers, and tilted project cards |
-| 🧭 Portfolio navigation | Fixed navigation and a reading-progress indicator |
-| 🧑‍💻 Career presentation | About, education, experience, skills, and featured-project sections |
-| ✉️ Contact interactions | Copy-email action, sound feedback, and a simulated submission animation |
+| 🎬 Scroll-controlled character | WebP image sequences drawn on a fixed HTML5 Canvas respond to page progress |
+| 🌸 Continuous section transition | The character travels from the hero into the About section, with afterimages and a landing ring |
+| 🌫️ Atmospheric background | A custom WebGL 2 shader creates slowly moving fog that responds to the cursor and scrolling |
+| 🖱️ Pointer depth | Perspective transforms add a subtle lean to the character stage |
+| 🧩 Rotating skills display | A CSS 3D drum reveals categorized technical skills as the visitor scrolls |
+| 📂 Project showcase | Featured applications, educational prototypes, documented designs, and planned projects have distinct labels |
+| 🎓 Career and education | Resume-aligned experience, degree details, certifications, and training |
+| ✉️ Direct contact | Email, phone, social links, clipboard actions, and a downloadable resume |
+| 📱 Responsive presentation | Separate character placement and sizing for desktop and smaller viewports |
 
-## 🛠️ Technology
+## 🛠️ Technology stack
 
-| Layer | Tools |
+| Layer | Implementation |
 | :--- | :--- |
-| Application | Next.js 14, React 18, TypeScript |
-| Styling | Tailwind CSS, custom CSS, clsx, tailwind-merge |
-| Motion | GSAP, Framer Motion, CSS transforms |
-| Hero rendering | HTML5 Canvas 2D, PNG image sequence, requestAnimationFrame |
-| Interface details | Lucide React, canvas-confetti, Web Audio helpers |
+| Framework | Next.js 14 App Router, React 18 |
+| Language | TypeScript |
+| Styling | Custom CSS, CSS variables, media queries, perspective transforms |
+| UI animation | Framer Motion |
+| Smooth scrolling | Lenis |
+| Character renderer | HTML5 Canvas 2D, WebP frame sequences, requestAnimationFrame |
+| Atmosphere | Custom WebGL 2 vertex and fragment shaders |
+| Typography | Bebas Neue, Inter, JetBrains Mono, and a local Bangers font |
 
-## ⚙️ How the hero works
+Three.js and React Three Fiber packages are included in the dependencies. The inspected character stage uses Canvas 2D, and the fog backdrop uses WebGL 2 directly.
 
-1. Load the first image, then fetch the rest of the sequence in batches.
-2. Measure the mouse or touch position relative to the viewport center.
-3. Convert that position into an angle using `Math.atan2`.
-4. Interpolate along the shortest angular path for smooth rotation.
-5. Map the angle to a frame index and draw the image on the canvas.
+## ⚙️ Behind the animation
 
-The active home page uses `CanvasMouseHero.tsx`. A separate `CanvasScrollSequence.tsx` component also exists in the source; it is not the hero mounted by `src/app/page.tsx`.
+The character is rendered from pre-rendered images. Scroll position selects the image to display; pointer position adds perspective to the whole stage.
+
+- **Hero:** 216 active frames, using source frames `025.webp` through `240.webp`. The first 24 source frames are skipped by configuration.
+- **About:** 96 active frames, using `001.webp` through `096.webp`.
+- **Progressive loading:** Frames load in increasingly dense passes with steps of 16, 8, 4, 2, and 1, using six concurrent image requests.
+- **Loading fallback:** If the requested frame is not available yet, the renderer selects the nearest loaded frame.
+- **Display sizing:** The character canvas caps device pixel ratio at 2. The fog renders at one-third viewport resolution and is enlarged through CSS.
+
+The Lenis wrapper skips smooth-scroll initialization when reduced motion is requested. This does not imply that every other animated effect is disabled.
+
+## 📂 Projects presented
+
+| Project | Focus | Category |
+| :--- | :--- | :--- |
+| [Little Lemon Restaurant Web Application](https://github.com/maryamabdulkarim361-lab/little-lemon-web-application) | Menu and booking REST APIs, Djoser authentication, database configuration, and API tests | Django capstone |
+| [Metriva](https://github.com/maryamabdulkarim361-lab/Metriva) | Conversational analytics, database exploration, SQL validation, and saved reports | Analytics project |
+| [Zaiqa](https://github.com/maryamabdulkarim361-lab/Zaiqa) | Restaurant interfaces with 3D dish previews and AR support for compatible assets and devices | Front-end prototype |
+| [Breast Ultrasound Classifier](https://github.com/maryamabdulkarim361-lab/Ultrasound-Diagnosis-for-Breast-Cancer) | PyTorch classification, Flask interface, and Grad-CAM visualization support | Educational AI prototype |
+| [AI Database Assistant](https://github.com/maryamabdulkarim361-lab/AI-Database-Assistant) | Natural-language-to-SQL workflow and read-only query validation concepts | Documented system design |
+
+Zaiqa's database-backed functionality is planned. The ultrasound classifier is an educational research prototype, and the AI Database Assistant is presented as a documented design rather than a deployed application.
+
+**Planned work:** Live Restaurant Application and Cybersecurity Attack Analysis Agent.
 
 ## 🚀 Run locally
 
-Install Node.js compatible with Next.js 14, npm, and Git.
+Prerequisites: Git, npm, and a Node.js version compatible with Next.js 14.
 
 ```bash
-git clone https://github.com/maryamabdulkarim361-lab/3D-portfolio.git
-cd 3D-portfolio
+git clone https://github.com/maryamabdulkarim361-lab/Sakura-Animation-Portfolio.git
+cd Sakura-Animation-Portfolio
 npm ci
 npm run dev
 ```
 
-Open [localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000).
 
-The `predev` and `prebuild` scripts automatically run the frame-sync utility. It reads PNGs from `frames/` and `public/frames/`, then creates normalized names such as `frame-001.png` and `frame_001.png` under `public/frames/`.
-
-### Production build
+### Production
 
 ```bash
 npm run build
 npm start
 ```
 
-### Available commands
-
 | Command | Purpose |
 | :--- | :--- |
-| `npm run dev` | Synchronize frames and start the development server |
-| `npm run build` | Synchronize frames and create a production build |
+| `npm run dev` | Start the development server |
+| `npm run build` | Create a production build |
 | `npm start` | Serve the production build |
-| `npm run sync-frames` | Normalize frame filenames manually |
-| `npm run lint` | Invoke Next.js linting; local ESLint setup may be required |
 
-## 🗂️ Source guide
+The current package scripts do not define a test or lint command. Keep `public/frames/`, `public/stills/`, `public/fonts/`, and `public/resume/` available when running or deploying the project.
 
-| Location | What lives here |
+## 🗂️ Code map
+
+| Path | Responsibility |
 | :--- | :--- |
-| `src/app/page.tsx` | Home-page composition and section order |
-| `src/app/layout.tsx` | Root layout and site metadata |
-| `src/components/CanvasMouseHero.tsx` | Frame loading, pointer tracking, and canvas rendering |
-| `src/components/ProjectShowcase.tsx` | Featured-project content and visual mockups |
-| `src/components/ParallaxCard.tsx` | Interactive card depth and tilt |
-| `src/components/InteractiveContact.tsx` | Contact UI, copy-email action, and submission animation |
-| `src/hooks/` | Mouse-parallax and scroll-velocity hooks |
-| `src/lib/` | Audio helpers and shared utilities |
-| `src/styles/globals.css` | Global styles and visual effects |
-| `tailwind.config.ts` | Theme configuration |
-| `frames/`, `public/frames/` | Hero image-sequence assets |
-| `scripts/sync-frames.mjs` | Frame synchronization utility |
+| `app/page.tsx` | Page composition, loading flow, and global pointer tracking |
+| `app/layout.tsx` | Root layout and metadata |
+| `app/globals.css` | Theme, typography, layouts, and CSS effects |
+| `lib/data.ts` | Profile, skills, projects, education, experience, and contact information |
+| `lib/frames.ts` | Progressive frame loading and nearest-frame lookup |
+| `lib/store.ts` | Shared animation state, frame counts, and scroll-to-frame mapping |
+| `lib/useScroll.ts` | Scroll helpers |
+| `components/stage/CharacterStage.tsx` | Character rendering and section transitions |
+| `components/stage/Backdrop.tsx` | WebGL fog shader |
+| `components/sections/` | Billboard, About, Arsenal, Missions, Honors, Journey, and Finale |
+| `components/ui/` | Intro, cursor, navigation, and smooth-scroll components |
+| `public/` | Character frames, stills, fonts, and resume |
 
-## 🎨 Personalize the portfolio
+## 🎨 Personalization guide
 
-- Update biography, education, and experience in the corresponding section components.
-- Edit skills in `TechMatrix.tsx` and project entries in `ProjectShowcase.tsx`.
-- Set your contact details and social destinations in `InteractiveContact.tsx`.
-- Adjust the palette in `tailwind.config.ts` and `src/styles/globals.css`.
-- Replace the frame sequence and update `totalFrames` in `src/app/page.tsx` if its length changes.
+1. Edit `lib/data.ts` to update profile details, project links, skills, experience, education, and training.
+2. Change theme variables in `app/globals.css` to adjust burgundy and Sakura-pink accents.
+3. Replace `public/resume/Maryam-Abdul-Karim-Resume.pdf` when updating the resume.
+4. Keep frame filenames consistent with `lib/frames.ts`; adjust frame counts and offsets in `lib/store.ts` when replacing sequences.
+5. Update metadata in `app/layout.tsx` and confirm all links after making changes.
 
-## 📝 Current implementation notes
+The contact section opens email and phone applications and links to social profiles. It does not provide a server-side message-delivery service.
 
-- The contact form currently simulates submission with a timer and success animation. Connect a backend or email service before using it to receive messages.
-- Several social and project links currently point to generic destinations or `#contact`; replace them with the intended URLs.
-- Featured-project cards include illustrative UI mockups. Their displayed telemetry is presentation content, not live measurements from those products.
-- Frame assets are required for the hero. Keep the image directories available when running or deploying the application.
+## 👩‍💻 About me
 
-## 👩‍💻 About the developer
-
-I am Maryam Abdul Karim, a Computer Science graduate with freelance front-end development experience, web and mobile project coordination experience, and a growing portfolio of Python, Django, and JavaScript applications. My interests include REST APIs, relational databases, authentication, responsive interfaces, and educational AI prototypes.
+I am **Maryam Abdul Karim**, a Computer Science graduate building Python, Django, and JavaScript applications, with experience in freelance front-end development and web and mobile project coordination.
 
 **Education:** Bachelor of Computer Science with Honours, Lahore College for Women University, 2011–2015 — degree completed.
 
-## 🔎 More of my work
-
-These repositories are listed in my resume. This directory is separate from the portfolio website's current project-card content, which is being aligned with my resume.
-
-| Project | Focus | Status |
-| :--- | :--- | :--- |
-| [Little Lemon](https://github.com/maryamabdulkarim361-lab/little-lemon-web-application) | Django REST menu and booking APIs, token authentication, and API tests | Django capstone |
-| [Metriva](https://github.com/maryamabdulkarim361-lab/Metriva) | Django and React/TypeScript conversational analytics, SQL validation, reports, and Docker configuration | Analytics project |
-| [Zaiqa](https://github.com/maryamabdulkarim361-lab/Zaiqa) | Restaurant interfaces, 3D dish previews, and AR support for compatible assets/devices | Front-end prototype; database extension planned |
-| [Breast Ultrasound Classifier](https://github.com/maryamabdulkarim361-lab/Ultrasound-Diagnosis-for-Breast-Cancer) | PyTorch classification, Flask interface, and Grad-CAM support | Educational AI prototype |
-| [AI Database Assistant](https://github.com/maryamabdulkarim361-lab/AI-Database-Assistant) | Natural-language-to-SQL workflow, read-only validation, and analytics concepts | Documented system design |
-
-## 🧭 Next steps
-
-- Align website project cards, biography, experience, and contact details with my resume.
-- Replace generic social and project destinations with the correct links.
-- Connect the contact experience to real message delivery or an honest email action.
+My project interests include REST APIs, relational databases, authentication, responsive interfaces, and educational AI prototypes. I am also continuing to learn machine learning and RAG.
 
 ## 🤝 Connect
 
-Built by **Maryam Abdul Karim**.
+[![GitHub](https://img.shields.io/badge/GitHub-Maryam-141414?style=for-the-badge&logo=github)](https://github.com/maryamabdulkarim361-lab)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-8B0032?style=for-the-badge)](https://www.linkedin.com/in/maryamabdulkarim361)
+[![Email](https://img.shields.io/badge/Email-Say_Hello-E0115F?style=for-the-badge)](mailto:maryamabdulkarim361@gmail.com)
 
-[GitHub profile](https://github.com/maryamabdulkarim361-lab) · [LinkedIn](https://www.linkedin.com/in/maryamabdulkarim361) · [Email](mailto:maryamabdulkarim361@gmail.com) · [Report an issue](https://github.com/maryamabdulkarim361-lab/3D-portfolio/issues)
-
-If this project sparks an idea, a star or a thoughtful piece of feedback is always welcome.
+[View Resume](public/resume/Maryam-Abdul-Karim-Resume.pdf) · [Report an Issue](https://github.com/maryamabdulkarim361-lab/Sakura-Animation-Portfolio/issues)
 
 ---
 
 <div align="center">
-  <strong>Code. Motion. Personality.</strong><br />
-  <sub>A portfolio designed to be explored.</sub>
+  <strong>🌸 Code with purpose. Present with personality.</strong><br />
+  <sub>Sakura Animation Portfolio · Maryam Abdul Karim</sub>
 </div>
